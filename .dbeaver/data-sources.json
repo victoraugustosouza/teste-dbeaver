@@ -1,0 +1,56 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-17cc2286d6e-39cb82740711357d": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "zjfrqhqo",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "fanny.db.elephantsql.com",
+				"port": "5432",
+				"database": "zjfrqhqo",
+				"url": "jdbc:postgresql://fanny.db.elephantsql.com:5432/zjfrqhqo",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"virtual-models": {
+		"postgres-jdbc-17cc2286d6e-39cb82740711357d": {
+			"zjfrqhqo": {
+				"public": {
+					"@properties": {
+						"erd.diagram.state": {
+							"serialized": "<diagram version=\"1\" name=\"empty\" time=\"202110271142\"><entities><data-source id=\"postgres-jdbc-17cc2286d6e-39cb82740711357d\"><entity id=\"1\" name=\"newtable\" fq-name=\"public.newtable\" order=\"0\" x=\"180\" y=\"296\"><path name=\"public\"/><path name=\"zjfrqhqo\"/></entity><entity id=\"2\" name=\"newtable_1\" fq-name=\"public.newtable_1\" order=\"1\" x=\"323\" y=\"296\"><path name=\"public\"/><path name=\"zjfrqhqo\"/></entity><entity id=\"3\" name=\"pg_stat_statements\" fq-name=\"public.pg_stat_statements\" order=\"2\" x=\"483\" y=\"20\"><path name=\"public\"/><path name=\"zjfrqhqo\"/></entity></data-source></entities><relations/></diagram>"
+						}
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
