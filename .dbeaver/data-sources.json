@@ -24,8 +24,7 @@
 					"postgresql.dd.plain.string": "false",
 					"postgresql.dd.tag.string": "false"
 				},
-				"auth-model": "native",
-				"handlers": {}
+				"auth-model": "native"
 			}
 		}
 	},
@@ -36,6 +35,53 @@
 					"@properties": {
 						"erd.diagram.state": {
 							"serialized": "<diagram version=\"1\" name=\"empty\" time=\"202110271142\"><entities><data-source id=\"postgres-jdbc-17cc2286d6e-39cb82740711357d\"><entity id=\"1\" name=\"newtable\" fq-name=\"public.newtable\" order=\"0\" x=\"180\" y=\"296\"><path name=\"public\"/><path name=\"zjfrqhqo\"/></entity><entity id=\"2\" name=\"newtable_1\" fq-name=\"public.newtable_1\" order=\"1\" x=\"323\" y=\"296\"><path name=\"public\"/><path name=\"zjfrqhqo\"/></entity><entity id=\"3\" name=\"pg_stat_statements\" fq-name=\"public.pg_stat_statements\" order=\"2\" x=\"483\" y=\"20\"><path name=\"public\"/><path name=\"zjfrqhqo\"/></entity></data-source></entities><relations/></diagram>"
+						}
+					},
+					":newtable": {
+						"properties": {
+							"erd.diagram.state": {
+								"serialized": "<diagram version=\"1\" name=\"empty\" time=\"202110271158\"><entities><data-source id=\"postgres-jdbc-17cc2286d6e-39cb82740711357d\"><entity id=\"1\" name=\"newtable\" fq-name=\"public.newtable\" order=\"0\" color-bg=\"255,128,64\" x=\"20\" y=\"20\"><path name=\"public\"/><path name=\"zjfrqhqo\"/></entity><entity id=\"2\" name=\"newtable_1\" fq-name=\"public.newtable_1\" order=\"1\" x=\"276\" y=\"23\"><path name=\"public\"/><path name=\"zjfrqhqo\"/></entity><entity id=\"3\" name=\"newtable_2\" fq-name=\"public.newtable_2\" order=\"2\" x=\"555\" y=\"50\"><path name=\"public\"/><path name=\"zjfrqhqo\"/></entity></data-source></entities><relations><relation name=\"vfk_newtable_newtable_1\" type=\"vfk\" pk-ref=\"2\" fk-ref=\"1\"/></relations></diagram>"
+							}
+						},
+						"foreign-keys": [
+							{
+								"entity": "database://postgres-jdbc-17cc2286d6e-39cb82740711357d/zjfrqhqo/org.jkiss.dbeaver.ext.postgresql.model.PostgreSchema/public/org.jkiss.dbeaver.ext.postgresql.model.PostgreTable/newtable_1",
+								"constraint": "VIRTUAL_PK",
+								"attributes": {
+									"teste": "column1"
+								}
+							}
+						]
+					},
+					":newtable_1": {
+						"constraints": {
+							"VIRTUAL_PK": {
+								"type": "vpk",
+								"attributes": [
+									"column1"
+								]
+							}
+						}
+					},
+					":newtable_2": {
+						"foreign-keys": [
+							{
+								"entity": "database://postgres-jdbc-17cc2286d6e-39cb82740711357d/zjfrqhqo/org.jkiss.dbeaver.ext.postgresql.model.PostgreSchema/public/org.jkiss.dbeaver.ext.postgresql.model.PostgreTable/newtable_3",
+								"constraint": "VIRTUAL_PK",
+								"attributes": {
+									"column1": "column1"
+								}
+							}
+						]
+					},
+					":newtable_3": {
+						"constraints": {
+							"VIRTUAL_PK": {
+								"type": "vpk",
+								"attributes": [
+									"column1"
+								]
+							}
 						}
 					}
 				}

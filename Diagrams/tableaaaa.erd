@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="tableaaaa.erd">
+	<entities>
+		<data-source id="postgres-jdbc-17cc2286d6e-39cb82740711357d">
+			<entity id="1" name="newtable" fq-name="public.newtable" order="0" x="20" y="20">
+				<path name="public"/>
+				<path name="zjfrqhqo"/>
+			</entity>
+			<entity id="2" name="newtable_1" fq-name="public.newtable_1" order="1" x="180" y="20">
+				<path name="public"/>
+				<path name="zjfrqhqo"/>
+			</entity>
+			<entity id="3" name="newtable_2" fq-name="public.newtable_2" order="2" border-width="3" x="20" y="143">
+				<path name="public"/>
+				<path name="zjfrqhqo"/>
+			</entity>
+			<entity id="4" name="newtable_3" fq-name="public.newtable_3" order="3" x="180" y="143">
+				<path name="public"/>
+				<path name="zjfrqhqo"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="vfk_newtable_newtable_1" type="vfk" pk-ref="2" fk-ref="1"/>
+		<relation name="vfk_newtable_2_newtable_3" type="vfk" pk-ref="4" fk-ref="3"/>
+	</relations>
+</diagram>
